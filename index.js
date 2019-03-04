@@ -20,13 +20,9 @@ return `${item} has been added to your cart.`;
 };
 
 function viewCart() {
-  for (var i = 0; i < cart.length; i++) {
-    if (i === 1) {
-      return `In your cart, you have ${i} at ${i}.`
-    } else {
-        return `Your shopping cart is empty.`;
-    };
-  };
+  if(cart.length == 0) {
+    console.log("Your shopping card is empty.");
+  }
 };
 
 function total() {
