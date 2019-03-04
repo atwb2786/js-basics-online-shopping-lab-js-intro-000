@@ -32,6 +32,9 @@ function viewCart() {
   }
   if (cart.length === 2) {
     return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`;
+  } else {
+    let lastLine = array.pop();
+    return `In your cart, you have ${array.join(', ')}, and ${lastLine}.`
   }
 };
 
