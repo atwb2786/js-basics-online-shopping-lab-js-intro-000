@@ -20,10 +20,15 @@ return `${item} has been added to your cart.`;
 };
 
 function viewCart() {
-  if(!cart.length) {
-    console.log("Your shopping card is empty.");
+  var array = [];
+  for (let i = 0; i < cart.length; i++) {
+    array.push(`${cart[i].itemName} at ${cart[i].itemPrice}.`);
+  }
+  if (cart.length === 0) {
+    return `Your shopping cart is empty.`;
   }
 };
+
 
 function total() {
   // write your code here
