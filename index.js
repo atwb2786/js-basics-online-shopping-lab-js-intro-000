@@ -22,7 +22,7 @@ return `${item} has been added to your cart.`;
 function viewCart() {
   var array = [];
   for (let i = 0; i < cart.length; i++) {
-    array.push(`${cart[i].itemName} at ${cart[i].itemPrice}.`);
+    array.push(`${cart[i].itemName} at $${cart[i].itemPrice}.`);
   }
   if (cart.length === 0) {
     return `Your shopping cart is empty.`;
