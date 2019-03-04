@@ -22,7 +22,7 @@ return `${item} has been added to your cart.`;
 function viewCart() {
   for (var i = 0; i < cart.length; i++) {
     if (i === 0) {
-        console.log("Your shopping cart is empty.");
+        return `Your shopping cart is empty.`;
     };
   };
 };
